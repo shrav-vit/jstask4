@@ -1,0 +1,142 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      #wrapper {
+        width: 500px;
+        height: 50%;
+        overflow: hidden;
+        border: 0px solid #000;
+        margin: 50px auto;
+        padding: 10px;
+      }
+
+      .input-container {
+        display: flex;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      .icon {
+        margin-top: 5px;
+        height: 14px;
+        padding: 10px;
+        background: whitesmoke;
+        color: grey;
+        width: 20px;
+        text-align: center;
+        border-radius: 3px 0px 0px 3px;
+      }
+
+      .main-content {
+        width: 250px;
+        height: 60%;
+        margin: 10px auto;
+        background-color: #fff;
+        border: 2px solid #e6e6e6;
+        border-radius: 5px;
+        padding: 40px 50px;
+      }
+
+      .header {
+        border: 0px solid #000;
+        margin-bottom: 5px;
+      }
+
+      .header img {
+        height: 50px;
+        width: 175px;
+        margin: auto;
+        position: relative;
+        left: 40px;
+        margin-bottom: 10px;
+      }
+
+      .input-1,
+      .input-2 {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 8px 12px;
+        border: 1px solid #dbdbdb;
+        box-sizing: border-box;
+      }
+
+      .btn {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        height: 40px;
+        width: 100%;
+        background-color: #3897f0;
+        border: 1px solid #3897f0;
+        padding: 5px 12px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 3px;
+      }
+
+      input:focus {
+        background-color: yellow;
+      }
+
+      .foot {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .links {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="main-content">
+        <div class="header">
+          <img
+            src="https://www.dafont.com/forum/attach/orig/8/1/815933.png?1"
+            alt="Instagram"
+          />
+        </div>
+        <div>
+          <div class="input-container">
+            <i class="fa fa-user icon"></i>
+            <input type="text" placeholder="Username" class="input-1" />
+          </div>
+          <div class="input-container">
+            <i class="fa fa-lock icon"></i>
+            <input type="password" placeholder="Password" class="input-2" />
+          </div>
+          <input type="button" value="Log in" class="btn" />
+        </div>
+        <div class="links">
+          <div><input type="checkbox" />&nbsp; Remember me</div>
+          <a href="#">Forgot Password?</a>
+        </div>
+      </div>
+      <div class="foot">
+        Don't have an account?<a href="#">&nbsp; Sign up here!</a>
+      </div>
+    </div>
+  </body>
+</html>
